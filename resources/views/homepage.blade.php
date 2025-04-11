@@ -4,6 +4,12 @@
     Laravel Comics
 @endsection
 
+@php
+
+    $comics = config('comics');
+
+@endphp
+
 @section('content')
     <section>
         <div style="height: 400px; overflow: hidden;">
@@ -12,8 +18,17 @@
         </div>
     </section>
     <section class="bg-dark">
-        <x-card>
-
-        </x-card>
+        <div class="container pt-5">
+            <div class="row">
+                @foreach ($comics as $comic)
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                        <x-card>
+                            <x-slot:thumb>{{ $comic['thumb'] }}</x-slot:thumb>
+                            <x-slot:title>{{ $comic['title'] }}</x-slot:title>
+                        </x-card>
+                    </div>
+                @endforeach
+            </div>
+        </div>
     </section>
 @endsection
