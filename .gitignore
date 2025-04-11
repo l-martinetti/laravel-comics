@@ -1,0 +1,40 @@
+# Laravel specifici
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# IDE e editor
+/.idea
+/.vscode
+/.fleet
+/.phpstorm.meta.php
+/_ide_helper.php
+/_ide_helper_models.php
+
+# Build e asset compilati
+/public/build
+/public/css
+/public/js
+/public/mix-manifest.json
+
+# File di cache e log
+/.phpunit.cache
+.php-cs-fixer.cache
+
+# File di sistema
+.DS_Store
+Thumbs.db
+
+# File temporanei
+*.swp
+*.swo
